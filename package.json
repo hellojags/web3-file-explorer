@@ -1,9 +1,12 @@
 {
-  "name": "chonky",
-  "version": "2.3.0",
+  "name": "web3-file-explorer",
+  "version": "0.1.0",
   "description": "A File Browser component for React",
   "license": "MIT",
   "main": "dist/index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@skynethubio"
+  },
   "typings": "dist/index.d.ts",
   "files": [
     "dist",

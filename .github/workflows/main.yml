@@ -18,15 +18,27 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@skynethubio"
 
       - name: Install deps and build (with cache)
         uses: bahmutov/npm-install@v1
 
       - name: Lint
-        run: yarn lint
+        run: npm lint
 
       - name: Test
-        run: yarn test --ci --coverage --maxWorkers=2
+        run: npm test --ci --coverage --maxWorkers=2
 
       - name: Build
-        run: yarn build
+        run: npm build
+        
+      - name: Install
+        run: npm install
+
+      - name: Publish
+        run: npm publish
+        
+        env:
+          NODE_AUTH_TOKEN: ${secrets.GITHUB_TOKEN}
+      
