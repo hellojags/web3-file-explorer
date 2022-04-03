@@ -1,5 +1,5 @@
 {
-  "name": "web3-file-explorer",
+  "name": "@skynethubio/web3-file-explorer",
   "version": "0.1.0",
   "description": "A File Browser component for React",
   "license": "MIT",
@@ -100,19 +100,6 @@
     "shortid": "^2.2.16",
     "styled-components": "^5.3.0",
     "tsdef": "^0.0.14"
-  },
-  "homepage": "https://chonky.io/",
-  "author": {
-    "name": "Timur Kuzhagaliyev",
-    "email": "tim.kuzh@gmail.com",
-    "url": "https://foxypanda.me/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TimboKZ/Chonky.git"
-  },
-  "bugs": {
-    "url": "https://github.com/TimboKZ/Chonky/issues"
   },
   "keywords": [
     "file",
